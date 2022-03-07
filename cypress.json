@@ -1,6 +1,3 @@
 {
-  "reporter": "list",
-  "env": {
-    "NO_COLOR": 1 
-  }
+  "reporter": "doc"
 }
