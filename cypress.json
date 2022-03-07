@@ -1,1 +1,6 @@
-{}
+{
+  "reporter": "list",
+  "env": {
+    "NO_COLOR": 1 
+  }
+}
