@@ -25,6 +25,10 @@ describe('Empty TestSearch Test', () => {
           .find('h3')
           .should('have.text','Chemical Exposure by Zip Code')
         //expect(h3).to.include('Chemical Exposure')
+        
+        cy.get('[style="width: 75vw; margin: 20px auto; padding: 15px; background: white; border: 1px solid rgb(204, 204, 204);"]')
+          .find('[style="margin-right: 32px; width: 300px;"] > :nth-child(2)')
+          .should('have.text','EDDY, NM')
 
         cy.get('[style="display: flex; justify-content: flex-end; width: 75vw; margin: 8px auto;"] > [data-testid="textInput"]').type('light headedness')
         
@@ -44,7 +48,7 @@ describe('Empty TestSearch Test', () => {
 
         cy.pause()
 
-        cy.get('[data-testid="button"]').click()
+        //cy.get('[data-testid="button"]').click()
 
 
 
